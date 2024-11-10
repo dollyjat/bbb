@@ -1,0 +1,9 @@
+{
+	"cssvar.files": ["src/css/main.css"],
+
+	// Do not ignore node_modules css files, which is ignored by default
+	"cssvar.ignore": [],
+
+	// add support for autocomplete in JS or JS like files
+	"cssvar.extensions": ["css", "svelte"]
+}

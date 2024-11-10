@@ -1,0 +1,78 @@
+@import 'https://unpkg.com/open-props';
+
+/* optional imports that use the props */
+@import 'https://unpkg.com/open-props/normalize.min.css';
+
+/* :root {
+	--theme-color-1: #1b1b1f;
+	--theme-color-2: #202127;
+	--theme-color-3: #525252;
+	--text-colors-1: #ffffff;
+	--text-colors-2: #ebe9e6;
+	--text-colors-3: #b7b7b7;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+	overflow-wrap: break-word;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	font-family: 'Noto Serif Variable', serif;
+	background-color: var(--theme-color-1);
+	color: var(--text-colors-1);
+	overflow: auto;
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--theme-color-3);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--theme-color-2);
+	border-radius: 16px;
+}
+*/
+.markdown-body {
+	padding: 12px 12px;
+	width: 100%;
+}
