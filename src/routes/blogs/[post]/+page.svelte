@@ -3,17 +3,19 @@
 	import type { PageData } from './$types';
 	import Heading from '$lib/components/renders/heading.svelte';
 	import { tableOfContent } from '$lib/store/layout.svelte';
+	import CodeBlock from '$lib/components/renders/Code.svelte';
+
+	tableOfContent.set([]);
 
 	let { data }: { data: PageData } = $props();
-
-	console.log($tableOfContent);
 </script>
 
-<div class="markdown-body">
+<div class="md-body">
 	<SvelteMarkdown
 		source={data.postMd}
 		renderers={{
-			heading: Heading
+			heading: Heading,
+			code: CodeBlock
 		}}
 	/>
 </div>

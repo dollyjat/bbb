@@ -1,9 +1,16 @@
+<script>
+	import ToggleMode from './toggleMode .svelte';
+</script>
+
 <header>
 	<div class="warper">
 		<h2><a href="/">SvelteKit</a></h2>
 		<div style="flex-grow: 1;">
 			<div class="content">
 				<ul>
+					<li>
+						<ToggleMode />
+					</li>
 					<li>
 						<a href="/"
 							><svg
@@ -54,7 +61,7 @@
 
 <style>
 	header {
-		background-color: var(--theme-color-1);
+		background-color: var(--theme-color-2);
 		position: fixed;
 		width: 100%;
 		z-index: 32;
@@ -81,7 +88,7 @@
 		width: 20px;
 		height: 20px;
 		margin-right: 10px;
-		color: white;
+		color: var(--text-colors-2);
 	}
 	.divider-line {
 		width: 100%;

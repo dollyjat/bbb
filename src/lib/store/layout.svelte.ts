@@ -2,6 +2,7 @@ import { writable } from 'svelte/store';
 
 export interface slug {
 	text: string;
+	depth: number;
 	slug: string;
 }
 

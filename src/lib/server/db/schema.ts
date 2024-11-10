@@ -12,7 +12,7 @@ export const post = pgTable('post', {
 
 export const postData = pgTable('post_data', {
 	id: integer().primaryKey().generatedAlwaysAsIdentity(),
-	postId: text('postId')
+	postId: integer('postId')
 		.notNull()
 		.references(() => post.id),
 	content: text('content').notNull()

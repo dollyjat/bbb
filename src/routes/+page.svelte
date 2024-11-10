@@ -1,6 +1,9 @@
 <script lang="ts">
+	import { tableOfContent } from '$lib/store/layout.svelte';
 	import type { PageData } from './$types';
 	import Time from 'svelte-time';
+
+	tableOfContent.set([]);
 
 	let { data }: { data: PageData } = $props();
 </script>
@@ -24,7 +27,7 @@
 						</div>
 						<div class="tags">
 							{#if post.tags}
-								{#each post.tags.slice(0, 3) as tag}
+								{#each post.tags.slice(0, 2) as tag}
 									<span class="tag">{tag}</span>
 								{/each}
 							{/if}
@@ -41,8 +44,7 @@
 		display: grid;
 		grid-template-columns: repeat(1, minmax(0, 1fr));
 		gap: 24px;
-		margin: 24px 24px;
-		overflow: hidden;
+		padding: 30px 8px;
 	}
 
 	.post-box {
@@ -109,7 +111,7 @@
 			gap: 8px;
 			flex-grow: 1;
 			span {
-				background-color: var(--theme-color-3);
+				background-color: var(--theme-color-1);
 				padding: 0 6px;
 				border-radius: 4px;
 				font-size: 12px;

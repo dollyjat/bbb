@@ -1,0 +1,246 @@
+/* General Markdown body styles */
+.md-body {
+	color: var(--text-colors-1); /* Default text color */
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		'Helvetica Neue', Arial, sans-serif; /* GitHub font stack */
+	font-size: 16px;
+	line-height: 1.6;
+	margin: 0 auto;
+	max-width: 900px;
+	padding: 20px;
+}
+
+/* Headings */
+.md-body h1,
+.md-body h2,
+.md-body h3,
+.md-body h4,
+.md-body h5,
+.md-body h6,
+.md-body strong {
+	font-weight: 600; /* Bold headings */
+	color: var(--text-colors-1);
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+/* Default styles for desktop */
+.md-body h1 {
+	font-size: 2.25em; /* Larger heading for h1 */
+}
+
+.md-body h2 {
+	font-size: 1.75em;
+}
+
+.md-body h3 {
+	font-size: 1.5em;
+}
+
+.md-body h4 {
+	font-size: 1.25em;
+}
+
+.md-body h5 {
+	font-size: 1.1em;
+}
+
+.md-body h6 {
+	font-size: 1em;
+}
+
+/* Media queries for responsive typography */
+
+/* Tablet devices (screen width less than 1024px) */
+@media (max-width: 1024px) {
+	.md-body h1 {
+		font-size: 2em; /* Slightly smaller for tablets */
+	}
+
+	.md-body h2 {
+		font-size: 1.5em;
+	}
+
+	.md-body h3 {
+		font-size: 1.3em;
+	}
+
+	.md-body h4 {
+		font-size: 1.2em;
+	}
+
+	.md-body h5 {
+		font-size: 1.1em;
+	}
+
+	.md-body h6 {
+		font-size: 1em;
+	}
+}
+
+/* Mobile devices (screen width less than 768px) */
+@media (max-width: 768px) {
+	.md-body h1 {
+		font-size: 1.75em; /* Smaller heading for mobile */
+	}
+
+	.md-body h2 {
+		font-size: 1.4em;
+	}
+
+	.md-body h3 {
+		font-size: 1.2em;
+	}
+
+	.md-body h4 {
+		font-size: 1.1em;
+	}
+
+	.md-body h5 {
+		font-size: 1em;
+	}
+
+	.md-body h6 {
+		font-size: 0.9em;
+	}
+}
+
+/* Extra small devices (screen width less than 480px) */
+@media (max-width: 480px) {
+	.md-body h1 {
+		font-size: 1.5em; /* Even smaller for very small screens */
+	}
+
+	.md-body h2 {
+		font-size: 1.3em;
+	}
+
+	.md-body h3 {
+		font-size: 1.1em;
+	}
+
+	.md-body h4 {
+		font-size: 1em;
+	}
+
+	.md-body h5 {
+		font-size: 0.9em;
+	}
+
+	.md-body h6 {
+		font-size: 0.85em;
+	}
+}
+
+/* Paragraphs */
+.md-body p {
+	margin-bottom: 1em;
+	line-height: 1.6;
+}
+
+/* Lists */
+.md-body ul,
+.md-body ol {
+	margin-left: 2em;
+	margin-bottom: 1em;
+}
+
+.md-body li {
+	line-height: 1.5;
+}
+
+.md-body em {
+	color: #9a9a9a;
+}
+
+/* Links */
+.md-body a {
+	color: #0366d6; /* GitHub link color */
+	text-decoration: none;
+}
+
+.md-body a:hover {
+	text-decoration: underline;
+}
+
+/* Blockquotes */
+.md-body blockquote {
+	border-left: 4px solid #dfe2e5;
+	padding-left: 1em;
+	margin-left: 0;
+	color: #6a737d;
+	font-style: italic;
+	background-color: #fafbfc;
+}
+
+/* Horizontal Rules */
+.md-body hr {
+	border: 0;
+	border-top: 1px solid #dfe2e5;
+	margin: 1.5em 0;
+}
+
+/* Tables */
+.md-body table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 1em;
+}
+
+.md-body th,
+.md-body td {
+	padding: 8px 12px;
+	border: 1px solid #dfe2e5;
+}
+
+.md-body th {
+	background-color: #f6f8fa;
+	font-weight: 600;
+}
+
+.md-body td {
+	background-color: #ffffff;
+}
+
+.md-body tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+/* Task Lists */
+.md-body input[type='checkbox'] {
+	margin-right: 0.5em;
+}
+
+.md-body ul.task-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.md-body ul.task-list li {
+	position: relative;
+	padding-left: 25px;
+}
+
+.md-body ul.task-list li input[type='checkbox'] {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* Images */
+.md-body img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Additional fine-tuning for lists */
+.md-body ul {
+	padding-left: 20px;
+	list-style-type: disc;
+}
+
+.md-body ol {
+	padding-left: 20px;
+	list-style-type: decimal;
+}

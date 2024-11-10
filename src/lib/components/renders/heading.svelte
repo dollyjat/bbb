@@ -10,8 +10,8 @@
 
 	let id = slugger.slug(text);
 
-	if (depth === 1) {
-		addOne({ text, slug: id });
+	if (depth === 1 || depth === 2) {
+		addOne({ text, slug: id, depth });
 	}
 </script>
 
